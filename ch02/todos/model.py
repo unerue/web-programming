@@ -1,25 +1,10 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Todo(BaseModel):
-    id: int
-    item: str
-
-    class Config:
-        schema_extra = {
-            "example": {
-                "id": 1,
-                "item": "Example Schema!"
-            }
-        }
+    id: int = Field(..., example=1)
+    item: str = Field(..., example="Example Schema!")
 
 
 class TodoItem(BaseModel):
-    item: str
-  
-    class Config:
-        schema_extra = {
-            "example": {
-            "item": "Read the next chapter of the book"
-        }  
-    }
+    item: str = Field(..., example="Read the next chapter of the book")

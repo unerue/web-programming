@@ -31,3 +31,8 @@ CHAPTER 7. 보안
 **PART 3. FastAPI 애플리케이션 테스트 및 배포하기**   
 CHAPTER 8. 테스트  
 CHAPTER 9. 배포  
+
+
+## 
+
+pydantic BaseSettings -> pydantic-settings BaseSettings

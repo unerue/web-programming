@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rdbms"
+version = "0.1.0"
+description = ""
+authors = ["Yshgodd <kyun20087@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+jinja2 = "^3.1.5"
+python-multipart = "^0.0.20"
+bcrypt = "^4.2.1"
+beanie = "^1.28.0"
+email-validator = "^2.2.0"
+httpx = "^0.28.1"
+motor = "^3.6.0"
+passlib = "^1.7.4"
+pytest = "^8.3.4"
+python-dotenv = "^1.0.1"
+python-jose = "^3.3.0"
+sqlmodel = "^0.0.22"
+pydantic-settings = "^2.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
