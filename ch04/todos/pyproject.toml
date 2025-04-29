@@ -1,17 +1,10 @@
 [project]
-name = "web-programming"
+name = "ch06-planner"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "beanie>=1.29.0",
     "fastapi>=0.115.12",
-]
-
-[tool.uv.workspace]
-members = [
-    "ch05/planner",
- "ch06/planner",
- "ch02/django",
+    "uvicorn>=0.34.0",
 ]
