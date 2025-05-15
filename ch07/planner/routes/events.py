@@ -29,7 +29,8 @@ async def retrieve_event(id: PydanticObjectId) -> Event:
         )
     return event
 
-
+# 인증: 영어로 authentication
+# 인가: 영어로 authorization
 @event_router.post("/new")
 async def create_event(body: Event, user: str = Depends(authenticate)) -> dict:
     body.creator = user

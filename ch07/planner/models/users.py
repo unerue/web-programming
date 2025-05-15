@@ -7,7 +7,7 @@ class User(Document):
     email: EmailStr
     password: str
 
-    class Collection:
+    class Settings:
         name = "users"
 
     class Config:

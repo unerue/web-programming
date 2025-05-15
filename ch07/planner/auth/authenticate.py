@@ -2,6 +2,8 @@ from auth.jwt_handler import verify_access_token
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 
+# OAuth2 OAuth 차이점
+# Bearer 토큰 방식이 뭔데?
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/user/signin")
 
 

@@ -18,6 +18,7 @@ origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    # 역할이 뭔데?  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

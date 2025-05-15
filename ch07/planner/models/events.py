@@ -23,7 +23,7 @@ class Event(Document):
             }
         }
 
-    class Collection:
+    class Settings:
         name = "events"
 
 

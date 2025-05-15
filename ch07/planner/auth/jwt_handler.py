@@ -1,9 +1,9 @@
 import time
 from datetime import datetime
-
-from database.connection import Settings
 from fastapi import HTTPException, status
 from jose import jwt, JWTError
+from database.connection import Settings
+
 
 settings = Settings()
 
@@ -12,6 +12,7 @@ def create_access_token(user: str):
     payload = {
         "user": user,
         "expires": time.time() + 3600
+    
     }
 
     token = jwt.encode(payload, settings.SECRET_KEY, algorithm="HS256")
